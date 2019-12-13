@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions
 
 @given(u'user is on the landing page') 
 def step_impl(context): 
-    context.browser.get("http://localhost:8080/") 
+    context.browser.get("http://3.93.218.186:8081/") 
 
 @when(u'user clicks on launch button') 
 def step_impl(context): 
@@ -19,5 +19,5 @@ def step_impl(context):
 @then(u'user gets redirected to the dashboard') 
 def step_impl(context):
     wait = WebDriverWait(context.browser, 3) 
-    assert context.browser.current_url == "http://localhost:8080/login" 
+    assert context.browser.current_url == "http://3.93.218.186:8081/login" 
      
