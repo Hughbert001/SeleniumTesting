@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions
 
 @given(u'user is on the dashboard page') 
 def step_impl(context): 
-    context.browser.get("http://localhost:8080/dashboard") 
+    context.browser.get("http://3.93.218.186:8081/dashboard") 
 
 @when(u'user selects a specifc user by name') 
 def step_impl(context): 
